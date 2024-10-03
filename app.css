@@ -1,0 +1,181 @@
+:root {
+    --footerBGColor:#47525D;
+    --bodyBGColor:#F0F5F4;
+    --navBGColor:#172533;
+    --lightBoxColor:#CEDEED;
+    --darkBoxColor:#A3B2C1;
+    --buttonColor:#6FABD6;
+}
+
+@font-face {
+    font-family: 'Joan';
+    src: url('/fonts/Joan-Regular.ttf');
+}
+
+body{
+    background-color: var(--bodyBGColor);
+    padding: 0;
+    margin: 0;
+}
+
+.navBar{
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    align-items:center;
+    justify-content: flex-end;
+    align-content: space-evenly;
+    background-color: var(--navBGColor);
+    padding: 1rem 2rem;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index: 1;
+}
+
+.navLinks{
+    margin-right: 2rem;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.logo{
+    margin-right: auto;
+}
+
+.heroImage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-height: 1000px;
+    object-fit: cover;
+}
+
+.heroText{
+    position: absolute;
+    text-align: center;
+    font-size: 5rem;
+    top: 150px;
+    left: 5%;
+    color:#FFFFFF;
+}
+
+.topImage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    opacity: 0.9;
+    filter: brightness(40%);
+}
+
+.topText{
+    position: absolute;
+    text-align: center;
+    font-size: 6rem;
+    top: 100px;
+    left: auto;
+    color:#FFFFFF;
+}
+
+.row{
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: left;
+    justify-content: space-between;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    /* margin: 5vh 0; */
+}
+
+.twoPartItem{
+    box-sizing: border-box;
+    width: 42%;
+    align-items: center;
+    justify-items: center;
+    margin: 5vh 3%;
+    margin-bottom: 0;
+    font-size: 2rem;
+}
+
+.threePartItem{
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    /* width: 20%; */
+    /* margin: 5% 3%; */
+    font-size: 2rem;
+    margin: 5vh;
+    justify-items: center;
+}
+
+.card{
+    width:20%;
+    height: 560px;
+    background-color: var(--lightBoxColor);
+    display: flex;
+    flex-flow: nowrap column;
+    border: solid 2px black;
+    justify-content: flex-start;
+    border-radius: 5px;
+    /* padding: 1%; */
+}
+
+.cardContent{
+    justify-self: flex-start;
+    margin: 0 5%;
+    font-size: 1.4rem;
+}
+
+.cardTitle{
+    margin: 2vh 5%;
+}
+
+.cardLink{
+    text-decoration: none;
+    background-color: var(--buttonColor);
+    color:black;
+    font-size: 1.8rem;
+    padding: 2%;
+    border: solid 1px black;
+    border-radius: 5px;
+    align-self: flex-end;
+    margin: 5%;
+    margin-top: auto;
+    /* justify-self: flex-end; */
+}
+
+.footer{
+    color: white;
+    display: flex;
+    background-color: var(--footerBGColor);
+    padding: 5%;
+    justify-items: center;
+    align-items: flex-start;
+    font-size: 1.5rem;
+}
+
+address{
+    width: 45%;
+    margin-right: 5%;
+}
+
+p{
+    font-family: 'Joan';
+}
