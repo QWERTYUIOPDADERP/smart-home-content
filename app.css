@@ -1,10 +1,10 @@
 :root {
-    --footerBGColor:#47525D;
-    --bodyBGColor:#F0F5F4;
-    --navBGColor:#172533;
-    --lightBoxColor:#CEDEED;
-    --darkBoxColor:#A3B2C1;
-    --buttonColor:#6FABD6;
+    --footerBGColor: #47525D;
+    --bodyBGColor: #F0F5F4;
+    --navBGColor: #172533;
+    --lightBoxColor: #CEDEED;
+    --darkBoxColor: #A3B2C1;
+    --buttonColor: #6FABD6;
 }
 
 @font-face {
@@ -12,40 +12,60 @@
     src: url('/fonts/Joan-Regular.ttf');
 }
 
-body{
+header, body, footer{
+    /* max-width: 2000px; */
+}
+
+body {
     background-color: var(--bodyBGColor);
     padding: 0;
     margin: 0;
 }
 
-.navBar{
+.navBar {
     box-sizing: border-box;
     display: flex;
     flex-flow: row wrap;
-    align-items:center;
+    align-items: center;
     justify-content: flex-end;
     align-content: space-evenly;
     background-color: var(--navBGColor);
     padding: 1rem 2rem;
     position: fixed;
-    top:0;
-    left:0;
-    width:100%;
+    top: 0;
+    left: 0;
+    width: 100%;
     z-index: 1;
 }
 
-.navLinks{
+nav>a {
     margin-right: 2rem;
     color: white;
     font-size: 2rem;
     text-decoration: none;
+    transition-duration: 250ms;
+    transition-property: color;
+    transition-timing-function: ease;
 }
 
-.logo{
+a.active {
+    color: var(--darkBoxColor);
+}
+
+nav>a:hover {
+    pointer-events: auto;
+    color: var(--buttonColor);
+    transition-duration: 250ms;
+    transition-property: color;
+    transition-timing-function: ease;
+}
+
+
+.logo {
     margin-right: auto;
 }
 
-.heroImage{
+.heroImage {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,16 +79,16 @@ body{
     object-fit: cover;
 }
 
-.heroText{
+.heroText {
     position: absolute;
     text-align: center;
     font-size: 5rem;
     top: 150px;
     left: 5%;
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
 
-.topImage{
+.topImage {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,50 +104,101 @@ body{
     filter: brightness(40%);
 }
 
-.topText{
+.topText {
     position: absolute;
     text-align: center;
     font-size: 6rem;
     top: 100px;
     left: auto;
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
 
-.row{
+.row {
     box-sizing: border-box;
     display: flex;
     flex-flow: row wrap;
     text-align: left;
-    justify-content: space-between;
+    justify-content: space-around;
     justify-items: center;
     align-content: space-evenly;
     align-items: center;
+    margin: 8vh 3%;
     /* margin: 5vh 0; */
 }
 
-.twoPartItem{
+.backgroundRow {
     box-sizing: border-box;
-    width: 42%;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: left;
+    justify-content: space-around;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    margin: 8vh 1%;
+    padding: 3% 0;
+    border-radius: 15px;
+    /* margin: 5vh 0; */
+}
+
+.verticalRow {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: left;
+    justify-content: space-around;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    padding: 4% 0;
+    border-top: solid var(--darkBoxColor) 1px;
+    border-bottom: solid var(--darkBoxColor) 1px;
+    /* margin: 5vh 0; */
+}
+
+.vertRowItem:first-child{
+    height: 50vh;
+}
+
+.vertRowItem{
+    box-sizing: border-box;
+    width: 65%;
+    object-fit: cover;
     align-items: center;
     justify-items: center;
-    margin: 5vh 3%;
     margin-bottom: 0;
     font-size: 2rem;
 }
 
-.threePartItem{
+.light {
+    background-color: var(--lightBoxColor);
+}
+
+.dark {
+    background-color: var(--darkBoxColor);
+}
+
+.twoPartItem {
+    box-sizing: border-box;
+    width: 42%;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 0;
+    font-size: 2rem;
+}
+
+.threePartItem {
     box-sizing: border-box;
     justify-content: space-evenly;
     /* width: 20%; */
     /* margin: 5% 3%; */
-    font-size: 2rem;
-    margin: 5vh;
+    margin-bottom: 0;
     justify-items: center;
 }
 
-.card{
-    width:20%;
-    height: 560px;
+.card {
+    width: 25%;
+    height: 600px;
     background-color: var(--lightBoxColor);
     display: flex;
     flex-flow: nowrap column;
@@ -137,20 +208,20 @@ body{
     /* padding: 1%; */
 }
 
-.cardContent{
-    justify-self: flex-start;
+.cardContent {
     margin: 0 5%;
     font-size: 1.4rem;
 }
 
-.cardTitle{
+.cardTitle {
+    font-size: 2rem;
     margin: 2vh 5%;
 }
 
-.cardLink{
+.cardLink {
     text-decoration: none;
     background-color: var(--buttonColor);
-    color:black;
+    color: black;
     font-size: 1.8rem;
     padding: 2%;
     border: solid 1px black;
@@ -161,7 +232,7 @@ body{
     /* justify-self: flex-end; */
 }
 
-.footer{
+.footer {
     color: white;
     display: flex;
     background-color: var(--footerBGColor);
@@ -169,13 +240,46 @@ body{
     justify-items: center;
     align-items: flex-start;
     font-size: 1.5rem;
+    margin-top: 8vh;
 }
 
-address{
+address {
     width: 45%;
     margin-right: 5%;
 }
 
-p{
+p {
     font-family: 'Joan';
+}
+
+.subtitle {
+    font-size: 3rem;
+}
+
+.noMargin {
+    justify-content: space-evenly;
+    margin: 0 0;
+    border-radius: 0;
+}
+
+.convenienceCard {
+    width: 34%;
+    background-color: white;
+    padding: 2%;
+    border: 0;
+    height: 620px;
+    border-radius: 25px;
+}
+
+.roundedImage {
+    border-radius: 20px;
+}
+
+.center {
+    align-self: center;
+}
+
+.fitWidth {
+    width: 100%;
+    height: auto;
 }
