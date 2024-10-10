@@ -209,7 +209,7 @@ nav>a:hover {
     font-size: 2rem;
 }
 
-.cardContent {
+.card p {
     margin: 0 5%;
     font-size: 2rem;
 }
@@ -219,7 +219,7 @@ nav>a:hover {
     border-top-right-radius: 8px;
 }
 
-.cardTitle {
+.card h3 {
     margin: 2vh 5%;
     font-size: 3rem;
     margin-bottom: 2%;
@@ -257,7 +257,7 @@ p {
     font-family: 'Joan';
 }
 
-.subtitle {
+.vertRowItem h3, .twoPartItem h3{
     font-size: 3rem;
     margin-bottom: 1%;
 }
