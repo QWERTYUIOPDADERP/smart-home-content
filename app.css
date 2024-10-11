@@ -260,6 +260,22 @@ body:hover{
     /* translate: -260px; */
 }
 
+.cardLink{
+    transition: all 5s;
+}
+
+.cardLink:hover{
+    translate: -180px 0;
+    rotate: -720deg;
+    /* rotate: 45deg; */
+    /* filter: invert(1); */
+    /* rotate: -720deg; */
+    /* translate: 0 150%;
+    transform: rotate(45deg); */
+    transition: all 5s;
+    /* translate: -260px; */
+}
+
 img{
     transition: all 20s;
     
