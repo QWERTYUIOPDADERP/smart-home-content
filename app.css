@@ -286,6 +286,15 @@ body:hover{
     transition: all 200ms;
 }
 
+address{
+    transition: all 200ms;
+}
+
+address:hover{
+    scale: 10;
+    transition: all 200ms;
+}
+
 .dark{
     transition: all 200ms;
     background-color: var(--darkBoxColor);
