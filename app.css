@@ -37,7 +37,6 @@ body {
     background-color: var(--navBGColor);
     padding: 1rem 2rem;
     position: fixed;
-    top: 0;
     left: 0;
     width: 100%;
     z-index: 1;
@@ -265,7 +264,7 @@ body:hover{
 }
 
 .cardLink:hover{
-    translate: -180px 0;
+    translate: -280px 0;
     rotate: -720deg;
     /* rotate: 45deg; */
     /* filter: invert(1); */
@@ -335,12 +334,16 @@ h1:hover{
 }
 
 nav{
-    transition: all 15s;
+    transition: all 1s;
 }
 
 nav:hover{
-    translate: 0 90vh;
-    transition: all 15s;
+    padding-top: 90vh;
+    background-color: transparent;
+    /* top: 90px; */
+    /* translate: 0 10000px; */
+    transition: all 0.5s;
+    
 }
 
 h2:hover, h3:hover, h4:hover, p:hover{
