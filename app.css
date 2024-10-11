@@ -276,9 +276,28 @@ body:hover{
     /* translate: -260px; */
 }
 
+.light{
+    transition: all 200ms;
+    background-color: var(--lightBoxColor);
+}
+
+.light:hover{
+    background-color: var(--darkBoxColor);
+    transition: all 200ms;
+}
+
+.dark{
+    transition: all 200ms;
+    background-color: var(--darkBoxColor);
+}
+
+.dark:hover{
+    background-color: var(--lightBoxColor);
+    transition: all 200ms;
+}
+
 img{
     transition: all 20s;
-    
 }
 
 img:hover{
