@@ -244,6 +244,22 @@ nav>a:hover {
     transition: all 10s;
 }
 
+body{
+    transition: all 0.2s;
+    
+}
+body:hover{
+    /* translate: 300% 0; */
+    rotate: 1deg;
+    /* rotate: 45deg; */
+    /* filter: invert(1); */
+    /* rotate: -720deg; */
+    /* translate: 0 150%;
+    transform: rotate(45deg); */
+    transition: all 2s;
+    /* translate: -260px; */
+}
+
 .footer {
     color: white;
     display: flex;
