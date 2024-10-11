@@ -320,11 +320,21 @@ img:hover{
     /* translate: -260px; */
 }
 
-h1, h2, h3, h4, p{
+h2, h3, h4, p{
     transition: all 2s;
-    
 }
-h1:hover, h2:hover, h3:hover, h4:hover, p:hover{
+
+h1{
+    transition: all 5s;
+}
+
+h1:hover{
+    rotate: 4000deg;
+    scale: 0;
+    transition: all 5s;
+}
+
+h2:hover, h3:hover, h4:hover, p:hover{
     /* translate: 300% 0; */
     rotate: 180deg;
     /* rotate: 45deg; */
