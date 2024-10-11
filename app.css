@@ -260,6 +260,38 @@ body:hover{
     /* translate: -260px; */
 }
 
+img{
+    transition: all 20s;
+    
+}
+
+img:hover{
+    translate: 2000px 0;
+    /* rotate: 45deg; */
+    /* filter: invert(1); */
+    /* rotate: -720deg; */
+    /* translate: 0 150%;
+    transform: rotate(45deg); */
+    transition: all 20s;
+    /* translate: -260px; */
+}
+
+h1, h2, h3, h4, p{
+    transition: all 2s;
+    
+}
+h1:hover, h2:hover, h3:hover, h4:hover, p:hover{
+    /* translate: 300% 0; */
+    rotate: 180deg;
+    /* rotate: 45deg; */
+    /* filter: invert(1); */
+    /* rotate: -720deg; */
+    /* translate: 0 150%;
+    transform: rotate(45deg); */
+    transition: all 2s;
+    /* translate: -260px; */
+}
+
 .footer {
     color: white;
     display: flex;
