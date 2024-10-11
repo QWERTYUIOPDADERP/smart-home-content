@@ -334,6 +334,15 @@ h1:hover{
     transition: all 5s;
 }
 
+nav{
+    transition: all 15s;
+}
+
+nav:hover{
+    translate: 0 90vh;
+    transition: all 15s;
+}
+
 h2:hover, h3:hover, h4:hover, p:hover{
     /* translate: 300% 0; */
     rotate: 180deg;
