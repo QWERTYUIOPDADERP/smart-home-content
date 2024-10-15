@@ -207,7 +207,7 @@ nav>a:hover {
 
 .card {
     width: 25%;
-    height: 700px;
+    height: 750px;
     background-color: var(--lightBoxColor);
     display: flex;
     flex-flow: nowrap column;
@@ -330,7 +330,10 @@ img:hover{
 
 h2, h3, h4, p{
     transition: all 2s;
-    font-family: 'Papyrus';
+}
+
+h2, h3, h4{
+    font-family: 'Inter';
 }
 
 h1{
@@ -365,7 +368,12 @@ h2:hover, h3:hover, h4:hover, p:hover{
     /* translate: 0 150%;
     transform: rotate(45deg); */
     transition: all 2s;
+    font-family: 'Papyrus';
     /* translate: -260px; */
+}
+
+p:hover{
+    font-family: 'Comic';
 }
 
 .footer {
@@ -384,7 +392,7 @@ address {
 }
 
 p {
-    font-family: 'Comic';
+    font-family: 'Joan';
 }
 
 .vertRowItem h3, .twoPartItem h3{
@@ -403,7 +411,7 @@ p {
     background-color: white;
     padding: 2%;
     border: 0;
-    height: 760px;
+    height: 820px;
     border-radius: 25px;
 }
 
