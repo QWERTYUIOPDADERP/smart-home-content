@@ -11,6 +11,15 @@
     font-family: 'Joan';
     src: url('/fonts/Joan-Regular.ttf');
 }
+@font-face {
+    font-family: 'Comic';
+    src: url('/fonts/COMIC.TTF');
+}
+@font-face {
+    font-family: 'Papyrus';
+    src: url('/fonts/papyrus.ttf');
+}
+
 
 html {
     background-color: black;
@@ -321,6 +330,7 @@ img:hover{
 
 h2, h3, h4, p{
     transition: all 2s;
+    font-family: 'Papyrus';
 }
 
 h1{
@@ -374,7 +384,7 @@ address {
 }
 
 p {
-    font-family: 'Joan';
+    font-family: 'Comic';
 }
 
 .vertRowItem h3, .twoPartItem h3{
